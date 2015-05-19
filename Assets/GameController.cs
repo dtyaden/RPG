@@ -31,8 +31,8 @@ public class GameController : MonoBehaviour {
 	public UI ui;
 
 	void Start () {
-
-		ui = transform.FindChild("UI").gameObject.GetComponent<UI>();
+		print (transform.Find ("ui"));
+		ui = transform.Find("ui").gameObject.GetComponent<UI>();
 
 		print ("Ui found? " + ui);
 
